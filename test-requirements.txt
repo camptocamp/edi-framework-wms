@@ -1,0 +1,3 @@
+odoo-addon-edi_wms_oca @ git+https://github.com/OCA/edi-framework-wms.git@refs/pull/1/head#subdirectory=edi_wms_oca
+odoo-addon-stock_warehouse_stock_type @ git+https://github.com/camptocamp/stock-logistics-warehouse.git@19-add-stock_warehouse_stock_type#subdirectory=stock_warehouse_stock_type
+odoo-addon-stock_external_inventory_report @ git+https://github.com/camptocamp/stock-logistics-warehouse.git@19-add-stock_external_inventory_report#subdirectory=stock_external_inventory_report
