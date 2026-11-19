@@ -1,0 +1,2 @@
+odoo-addon-edi_wms_oca @ git+https://github.com/camptocamp/edi-framework-wms.git@19-imp-edi_wms_oca-stock-areas#subdirectory=edi_wms_oca
+odoo-addon-stock_warehouse_lock_location @ git+https://github.com/OCA/stock-logistics-warehouse.git@refs/pull/2729/head#subdirectory=stock_warehouse_lock_location
