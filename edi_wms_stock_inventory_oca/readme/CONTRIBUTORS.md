@@ -1,0 +1,3 @@
+- [Camptocamp](https://www.camptocamp.com):
+  - Hadrien Huvelle \<<hadrien.huvelle@camptocamp.com>\>
+  - Simone Orsi \<<simone.orsi@camptocamp.com>\>
