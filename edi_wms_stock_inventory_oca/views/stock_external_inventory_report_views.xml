@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2026 Camptocamp SA
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="view_stock_external_inventory_report_tree" model="ir.ui.view">
+        <field name="name">stock.external.inventory.report.tree (edi wms)</field>
+        <field name="model">stock.external.inventory.report</field>
+        <field
+            name="inherit_id"
+            ref="stock_external_inventory_report.view_stock_external_inventory_report_tree"
+        />
+        <field name="arch" type="xml">
+            <field name="warehouse_id" position="after">
+                <field name="backend_id" optional="hide" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_stock_external_inventory_report_form" model="ir.ui.view">
+        <field name="name">stock.external.inventory.report.form (edi wms)</field>
+        <field name="model">stock.external.inventory.report</field>
+        <field
+            name="inherit_id"
+            ref="stock_external_inventory_report.view_stock_external_inventory_report_form"
+        />
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    name="action_view_edi_records"
+                    type="object"
+                    class="oe_stat_button"
+                    icon="fa-retweet"
+                    invisible="not exchange_record_count"
+                >
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="exchange_record_count" />
+                        </span>
+                        <span class="o_stat_text">EDI</span>
+                    </div>
+                </button>
+            </div>
+            <field name="warehouse_id" position="before">
+                <field name="backend_id" />
+            </field>
+        </field>
+    </record>
+</odoo>
